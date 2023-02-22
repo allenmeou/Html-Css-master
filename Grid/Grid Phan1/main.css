@@ -1,0 +1,137 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+.layout-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layout-item {
+  /* height: 500px; */
+}
+.layout {
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.layout2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px 100px 350px;
+  padding: 30px;
+  gap: 30px;
+  grid-template-areas:
+    "h1 h1 h2 h3"
+    "h4 h5 h2 h3"
+    "h4 h5 h6 h6";
+}
+.layout-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.layout-item:first-child {
+  grid-area: h1;
+}
+.layout-item:nth-child(2) {
+  grid-area: h2;
+}
+.layout-item:nth-child(3) {
+  grid-area: h3;
+}
+.layout-item:nth-child(4) {
+  grid-area: h4;
+}
+.layout-item:nth-child(5) {
+  grid-area: h5;
+}
+.layout-item:last-child {
+  grid-area: h6;
+}
+/* .layout-item:first-child {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.layout-item:nth-child(2),
+.layout-item:nth-child(3) {
+  grid-row: 1/3;
+}
+.layout-item:nth-child(4),
+.layout-item:nth-child(5) {
+  grid-row: 2/4;
+}
+.layout-item:last-child {
+  grid-column: 3/5;
+} */
+
+/* Layout khác */
+.post-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    "h1 h2 h3"
+    "h1 h4 h5";
+  padding: 20px;
+}
+.post-item {
+  /* height: 300px; */
+}
+.post-item:first-child {
+  grid-area: h1;
+}
+.post-item:nth-child(2) {
+  grid-area: h2;
+}
+.post-item:nth-child(3) {
+  grid-area: h3;
+}
+.post-item:nth-child(4) {
+  grid-area: h4;
+}
+.post-item:last-child {
+  grid-area: h5;
+}
+.post-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+.post-content {
+  font-weight: 300;
+  padding: 25px;
+  flex: 1;
+}
+.post-image__large {
+  /* height: auto; */
+  height: auto;
+}
+.post-item {
+  display: flex;
+  flex-direction: column;
+}

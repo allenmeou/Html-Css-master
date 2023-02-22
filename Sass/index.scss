@@ -1,0 +1,28 @@
+@import "header";
+@import "variables";
+
+@mixin buttonStyle {
+  background-color: $main-color;
+  border: 0;
+  padding: 5px 10px;
+  color: white;
+}
+section button {
+  @include buttonStyle();
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  button {
+    @include buttonStyle();
+  }
+  p {
+    font-size: 20px;
+  }
+}

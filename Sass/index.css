@@ -1,0 +1,22 @@
+header {
+  background-color: blue;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  background-color: blue;
+  border: 0;
+  padding: 5px 10px;
+  color: white;
+} /*# sourceMappingURL=index.css.map */
